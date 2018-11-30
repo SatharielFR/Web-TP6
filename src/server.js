@@ -25,7 +25,8 @@ app.post('/', function(req, res) {
     username: req.body.username
   })
     .then(() => {
-      res.send('User added !')
+        res.send('User added !'),
+        res.send('Modif')
     })
 })
 
