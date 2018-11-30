@@ -43,7 +43,7 @@ app.post('/', function(req, res) {
    * 
    * Listen only when database connection is sucessfull
    */
-app.listen(PORT, function() {
-    console.log('Express server listening on port' + PORT);
+app.listen(process.env.PORT, function () {
+    console.log('Express server listening on port' + process.env.PORT);
   });
 //});
